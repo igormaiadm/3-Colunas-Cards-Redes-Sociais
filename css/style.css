@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: Lexend Deca, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 12px;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.box {
+    padding: 40px;
+}
+
+.box h2 {
+    font-family: Big Shoulders Display, cursive;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+}
+
+.box p {
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.box a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+
+.portfolio {
+    background: #058363;
+    max-width: 960px;
+    padding: 40px;
+}
+
+.linkedin {
+    background: hsl(184, 100%, 22%);
+    max-width: 960px;
+    padding: 40px;
+}
+
+.instagram {
+    background: hsl(179, 100%, 13%);
+    max-width: 960px;
+    padding: 40px;
+}
+
+.portfolio a {
+    color: #058363;
+}
+
+.linkedin a {
+    color: hsl(184, 100%, 22%);
+}
+
+.instagram a {
+    color: hsl(179, 100%, 13%);
+}
+
+.box a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .cards {
+        margin: 2rem .5rem;
+    }
+}
